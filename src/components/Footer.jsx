@@ -1,5 +1,5 @@
 import React from 'react';
-import { footerCompany, navLinks, footerSocmed } from '../constants';
+import { footerCompany, navLinks, footerSocmed, emailInformations } from '../constants';
 import styles from '../style';
 import Card from '/src/assets/Card.jpg';
 
@@ -12,31 +12,28 @@ const Footer = () => {
       </div>
 
       <section className='z-10 max-w-6xl p-12 grid grid-cols-1 gap-y-8'>
-          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-3'>
+          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-4'>
 
             <div>
               <h2 className="text-lg font-bold mb-4">PT. SEGARA ALAM SINERGI</h2>
               {footerCompany.map((item, index) => (
               <div key={index}>
-                <p className={`${index === 2 ? 'mb-8' : ''}`}>{item.title}</p>
-                {Array.isArray(item.name) && (
-                  <>
-                    <h2 className="text-lg font-bold mb-4">FOR MORE INFORMATION</h2>
-                    {item.name.map((stat, i) => (
-                      <a key={i} href={stat.link} className='cursor-pointer hover:text-secondary transition-all duration-150' target="_blank" rel="noopener noreferrer"> {stat.email} - {stat.person}</a>
-                    ))}
-                  </>
-                )}
-                
-                {!Array.isArray(item.name) && (
-                  <p>{item.name}</p>
-                )}
+                <p className={`${index === 1 ? 'mt-4' : ''}`}>{item.title}</p>
               </div>
-            ))}
+              ))}
+            </div>
+
+            <div>
+              <h2 className="text-lg font-bold mb-4">FOR MORE INFORMATION</h2>
+              {emailInformations.map((email, index) => (
+                <div key={index}>
+                  <a href={email.link} className='hover:text-secondary transition-all duration-150'>{email.email} </a>
+                </div>
+              ))}
             </div>
 
             <div >
-              <h2 className="text-lg font-bold mb-4">Navigate Links</h2>
+              <h2 className="text-lg font-bold mb-4">NAVIGATE LINKS</h2>
               <ul>
                 {navLinks.map((stat, index) => (
                   <li key={index}>
@@ -47,7 +44,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h2 className="text-lg font-bold mb-4">Follow Us</h2>
+              <h2 className="text-lg font-bold mb-4">FOLLOW US</h2>
                 <div className="flex ">
                 {footerSocmed.map((stat, index) => (
                   <a href={`${stat.link}`} key={index} className={`hover:text-secondary transition-all cursor-pointer ${index === 1 ? 'mx-4' : ''}`}>

@@ -34,17 +34,17 @@ const OurMissions = () => {
             {ourProduct.map((product, index) => (
               <div key={index} className="min-w-full flex-shrink-0 relative flex justify-center items-center group h-[400px] w-[390px] md:h-[500px] cursor-pointer  ">
                 <img src={product.img} className="w-full h-full object-cover"/>
-                <div className="w-full h-full absolute bg-black group-hover:opacity-70  opacity-0 transition-all duration-300"></div>
-                <h2 className="absolute text-xl text-center md:text-5xl font-bold text-white group-hover:block hidden transition-all duration-300">
+                <div className="w-full h-full absolute bg-black group-hover:opacity-70  opacity-0 transition-all duration-500"></div>
+                <h2 className="absolute text-xl text-center md:text-5xl font-bold text-white group-hover:block hidden transition-all duration-500">
                   {product.title}
                 </h2>
               </div>
             ))}
           </div>
-          <button className="absolute top-1/2 left-1 transform rounded-full -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={goToPrevious}>
+          <button className="absolute top-1/2 left-0 transform  -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={goToPrevious}>
             &#10094;
           </button>
-          <button className="absolute top-1/2 right-1 transform rounded-full -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={goToNext}>
+          <button className="absolute top-1/2 right-0 transform  -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={goToNext}>
             &#10095;
           </button>
         </div>

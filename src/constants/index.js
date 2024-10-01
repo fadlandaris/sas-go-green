@@ -178,46 +178,41 @@ export const footerCompany = [
     id: 'address',
     title: 'Factory Address : Jl. Campur Salam No.184, Brangasan 2, Caturanom, Kec. Parakan, Kabupaten Temanggung, Jawa Tengah 56254',
   },
-  {
-    id: 'email',
-    title: 'sasgreenenergy@gmail.com',
-  },
-  {
-    id: 'person-email',
-    name: [
-      {
-        person: 'Teguh',
-        email: 'teguh@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=teguh@sasgogreen.com',
-      },
-      {
-        person: 'Herry',
-        email: 'herry@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=herry@sasgogreen.com',
-      },
-      {
-        person: 'Sri',
-        email: 'sri@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=sri@sasgogreen.com',
-      },
-      {
-        person: 'Suryati',
-        email: 'suryati@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=suryati@sasgogreen.com',
-      },
-      {
-        person: 'Rosian',
-        email: 'rosian@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=rosian@sasgogreen.com',
-      },
-      {
-        person: 'Duana',
-        email: 'duana@sasgogreen.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&to=duana@sasgogreen.com',
-      },
-    ],
-  },
 ];
+
+export const emailInformations = [
+  {
+    person: 'Teguh',
+    email: 'teguh@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=teguh@sasgogreen.com',
+  },
+  {
+    person: 'Herry',
+    email: 'herry@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=herry@sasgogreen.com',
+  },
+  {
+    person: 'Sri',
+    email: 'sri@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=sri@sasgogreen.com',
+  },
+  {
+    person: 'Suryati',
+    email: 'suryati@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=suryati@sasgogreen.com',
+  },
+  {
+    person: 'Rosian',
+    email: 'rosian@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=rosian@sasgogreen.com',
+  },
+  {
+    person: 'Duana',
+    email: 'duana@sasgogreen.com',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=duana@sasgogreen.com',
+  },
+]
+
 
 
 export const footerSocmed = [

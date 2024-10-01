@@ -19,6 +19,7 @@ const AboutUs = () => {
           <h2 className="font-bold mb-4 text-3xl md:text-4xl px-4 md:mt-4">
             PT. SEGARA ALAM SINERGI
           </h2>
+          <p>moefaris</p>
           <div className="p-4 bg-whit cursor-pointer text-[16px] text-body ">
             <span className="tracking-wide ">
               <span className="">W</span>e supply biomass energy from woodchips

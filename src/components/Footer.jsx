@@ -23,14 +23,14 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* <div>
+            <div>
               <h2 className="text-lg font-bold mb-4">FOR MORE INFORMATION</h2>
               {emailInformations.map((email, index) => (
                 <div key={index}>
                   <a href={email.link} className='hover:text-secondary transition-all duration-150'>{email.email} </a>
                 </div>
               ))}
-            </div> */}
+            </div>
 
             <div >
               <h2 className="text-lg font-bold mb-4">NAVIGATE LINKS</h2>

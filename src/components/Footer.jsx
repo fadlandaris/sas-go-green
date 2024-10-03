@@ -27,7 +27,7 @@ const Footer = () => {
               <h2 className="text-lg font-bold mb-4">FOR MORE INFORMATION</h2>
               {emailInformations.map((email, index) => (
                 <div key={index}>
-                  <a href={email.link} className='hover:text-secondary transition-all duration-150'>{email.email} </a>
+                  <p className='hover:text-secondary transition-all duration-150'>{email.email} </p>
                 </div>
               ))}
             </div>
@@ -47,9 +47,9 @@ const Footer = () => {
               <h2 className="text-lg font-bold mb-4">FOLLOW US</h2>
                 <div className="flex ">
                 {footerSocmed.map((stat, index) => (
-                  <p key={index} className={`hover:text-secondary transition-all cursor-pointer ${index === 1 ? 'mx-4' : ''}`}>
+                  <a href={`${stat.link}`} key={index} className={`hover:text-secondary transition-all cursor-pointer ${index === 1 ? 'mx-4' : ''}`}>
                     {stat.title}
-                  </p>
+                  </a>
                     ))}
               </div>
             </div>

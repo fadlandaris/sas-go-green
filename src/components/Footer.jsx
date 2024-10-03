@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <section className='z-10 max-w-6xl p-12 grid grid-cols-1 gap-y-8'>
-          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-4'>
+          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-3'>
 
             <div>
               <h2 className="text-lg font-bold mb-4">PT. SEGARA ALAM SINERGI</h2>
@@ -23,14 +23,14 @@ const Footer = () => {
               ))}
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="text-lg font-bold mb-4">FOR MORE INFORMATION</h2>
               {emailInformations.map((email, index) => (
                 <div key={index}>
                   <a href={email.link} className='hover:text-secondary transition-all duration-150'>{email.email} </a>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <div >
               <h2 className="text-lg font-bold mb-4">NAVIGATE LINKS</h2>

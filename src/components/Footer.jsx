@@ -47,9 +47,9 @@ const Footer = () => {
               <h2 className="text-lg font-bold mb-4">FOLLOW US</h2>
                 <div className="flex ">
                 {footerSocmed.map((stat, index) => (
-                  <a href={`${stat.link}`} key={index} className={`hover:text-secondary transition-all cursor-pointer ${index === 1 ? 'mx-4' : ''}`}>
+                  <p key={index} className={`hover:text-secondary transition-all cursor-pointer ${index === 1 ? 'mx-4' : ''}`}>
                     {stat.title}
-                  </a>
+                  </p>
                     ))}
               </div>
             </div>

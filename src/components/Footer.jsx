@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <section className='z-10 max-w-6xl p-12 grid grid-cols-1 gap-y-8'>
-          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-3'>
+          <div className='text-white grid grid-cols-1 gap-y-12 gap-x-12 md:grid-cols-4'>
 
             <div>
               <h2 className="text-lg font-bold mb-4">PT. SEGARA ALAM SINERGI</h2>

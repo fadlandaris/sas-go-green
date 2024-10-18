@@ -27,7 +27,7 @@ const Location = () => {
     // Debugging: Log formData to check if it's being updated correctly
     console.log(formData);
 
-    const phoneNumber = '6281291664669';
+    const phoneNumber = '628112789012';
     const whatsappMessage = `Name: ${formData.name}%0ACompany: ${formData.company}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
 
     // Debugging: Log the constructed message

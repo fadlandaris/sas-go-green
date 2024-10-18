@@ -5,6 +5,7 @@ import OurMissions from "./OurMissions";
 import Location from "./Location";
 import MachineProduct from "./MachineProduct";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 export {
   HeroCard,
@@ -14,5 +15,5 @@ export {
   Location,
   MachineProduct,
   Footer,
-
+  Contact,
 }

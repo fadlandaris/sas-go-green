@@ -1,5 +1,5 @@
 import { FcButtingIn } from 'react-icons/fc';
-import { SlEnergy, CiShoppingBasket, CiLocationOn, LiaPeopleCarrySolid, MdEnergySavingsLeaf, FaShoppingBasket, FaLocationDot, IoLocationSharp, FaTrophy, woodchip, woodpellets, freight, port, truck, machine, dryer, conveyor, screener, raw, MdEmail, FaPhone, storyTruck, storyProduct, storyMachine, storyTrucks, growth, energy, biomass, FaBolt, FaTruckRampBox, FaStar, shakehand, hero, hero2 } from '../assets'
+import { SlEnergy, CiShoppingBasket, CiLocationOn, LiaPeopleCarrySolid, MdEnergySavingsLeaf, FaShoppingBasket, FaLocationDot, IoLocationSharp, FaTrophy, woodchip, woodpellets, freight, port, truck, machine, dryer, conveyor, screener, raw, MdEmail, FaPhone, storyTruck, storyProduct, storyMachine, storyTrucks, growth, energy, biomass, FaBolt, FaTruckRampBox, FaStar, shakehand, hero, hero2, FaFacebookF, FaTiktok, PiInstagramLogoFill } from '../assets'
 
 export const heroData = [
   {
@@ -32,6 +32,10 @@ export const navLinks = [
   {
     id: "operations",
     title: "Operations",
+  },
+  {
+    id: "contact-us",
+    title: "Contact Us",
   },
 ]
 
@@ -169,6 +173,29 @@ export const storyData = [
   },
 ]
 
+export const contactUs = [
+  {
+    id: "contact",
+    title: "Contact Us"
+  },
+  {
+    id: "name",
+    title: "Name"
+  },
+  {
+    id: "company",
+    title: "Company"
+  },
+  {
+    id: "email",
+    title: "Email",
+  },
+  {
+    id: "message",
+    title: "Message"
+  },
+]
+
 export const footerCompany = [
   {
     id: 'address',
@@ -218,17 +245,17 @@ export const emailInformations = [
 export const footerSocmed = [
   {
     id: 'Facebook',
-    title: 'Facebook',
+    title: FaFacebookF,
     link: 'https://www.facebook.com/profile.php?id=61565102665601'
   },
   {
     id: 'Tiktok',
-    title: 'Tiktok',
+    title: FaTiktok,
     link: 'https://www.tiktok.com/@sasgogreen?_t=8q0n3rYoiTh&_r=1'
   },
   {
     id: 'Instagram',
-    title: 'Instagram',
+    title: PiInstagramLogoFill,
     link: 'https://www.instagram.com/sasgogreen?igsh=czg3ZXRwbXluYmpt'
   },
 ]

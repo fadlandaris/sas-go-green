@@ -43,10 +43,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`w-full py-[20px] flex justify-center bg-white text-body fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`w-full py-[20px] text-[14px] flex justify-center text-body bg-white fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='flex justify-between w-[1280px] items-center px-12'>
-        <div>
-          <img src={logo} alt="logo" className='w-20 object-cover' />
+        <div className='flex justify-center items-center'>
+          <img src={logo} alt="logo" className='w-10 object-cover' />
         </div>
 
         <ul className="hidden md:flex space-x-12">

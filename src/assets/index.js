@@ -69,7 +69,10 @@ import { TbBasketCheck } from "react-icons/tb";
 import { FaBolt } from "react-icons/fa";
 import { FaTruckRampBox } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
 
 
 export {
@@ -90,5 +93,9 @@ export {
   TbBasketCheck,
   FaBolt,
   FaTruckRampBox,
-  FaStar
+  FaStar,
+  FaWhatsapp,
+  FaFacebookF,
+  FaTiktok,
+ PiInstagramLogoFill,
 }

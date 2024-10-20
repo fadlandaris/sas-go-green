@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../style';
-import { GoArrowRight } from '../assets';
+import { GoArrowRight, Sas } from '../assets';
 import card from '/src/assets/Card.jpg';
 import { aboutUs } from '../constants';
 import certificate from '../assets/woodchip_lab_analys.pdf';
@@ -12,7 +12,12 @@ const AboutUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 md:items-center gap-y-6 gap-x-8 lg:gap-x-20 max-w-6xl w-full my-24">
 
 
-        <div className="h-[300px] md:h-[500px] bg-cover bg-center" style={{ backgroundImage: `url(${card})` }}/>
+      <div className="h-[300px] md:h-[500px] bg-cover bg-center relative">
+      <video className="w-full h-full object-cover" controls loop autoPlay muted>
+        <source src={Sas} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
         <div className="md:my-0 my-4 md:text-left p-4 md:px-0">
           <p className="font-bold text-secondary mb-2 px-4 ">| ABOUT US</p>
@@ -50,7 +55,7 @@ const AboutUs = () => {
               </div>
             ))}
         </div>
-
+            
       </div>
     </main>
   );

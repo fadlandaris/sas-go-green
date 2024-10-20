@@ -35,7 +35,7 @@ const OurMissions = () => {
               <div key={index} className="min-w-full flex-shrink-0 relative flex justify-center items-center group h-[400px] w-[390px] md:h-[500px] cursor-pointer  ">
                 <img src={product.img} className="w-full h-full object-cover"/>
                 <div className="w-full h-full absolute bg-black group-hover:opacity-70  opacity-0 transition-all duration-500"></div>
-                <h2 className="absolute text-xl text-center md:text-5xl font-bold text-white group-hover:block hidden transition-all duration-500">
+                <h2 className="absolute text-xl text-center md:text-3xl font-bold text-white group-hover:block hidden transition-all duration-500">
                   {product.title}
                 </h2>
               </div>

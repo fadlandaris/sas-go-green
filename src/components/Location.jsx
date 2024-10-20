@@ -1,8 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-import { RiGlobalFill } from '../assets';
+import React, { useState } from 'react';
 import Card from '/src/assets/Card.jpg';
-import { markets, contactUs } from '../constants';
+import { contactUs } from '../constants';
 import styles from '../style';
 
 const Location = () => {
@@ -24,16 +22,17 @@ const Location = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Debugging: Log formData to check if it's being updated correctly
-    console.log(formData);
-
-    const phoneNumber = '628112789012';
+    // Create the WhatsApp message
     const whatsappMessage = `Name: ${formData.name}%0ACompany: ${formData.company}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
 
-    // Debugging: Log the constructed message
-    console.log(whatsappMessage);
+    // WhatsApp phone number
+    const phoneNumber = '6281291664669'; // Update with the correct phone number
 
-    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, '_blank');
+    // WhatsApp URL with the pre-filled message
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    // Open WhatsApp link
+    window.open(whatsappLink, '_blank');
   };
 
   return (
@@ -45,12 +44,12 @@ const Location = () => {
       <div className='absolute max-w-7xl p-12'>
         <div>
           <p className='font-bold text-secondary text-[16px] text-center'>| OPERATIONS</p>
-          <h2 className='font-bold mt-4 mb-12 text-[40px] text-white text-center text-'>Our Factory <br /> Location</h2>
+          <h2 className='font-bold mt-4 mb-12 text-[40px] text-white text-center'>Our Factory <br /> Location</h2>
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 max-w-7xl gap-x-20 gap-y-12'>
           <div className='shadow-md border-2 h-[300px] sm:h-full border-white'>
-            <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5169753879027!2d110.07629327429838!3d-7.2956637717134605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70764795d30c87%3A0xffd0d04496c24a3e!2sJl.%20Campur%20Salam%20No.184%2C%20Capgawen%2C%20Caturanom%2C%20Kec.%20Parakan%2C%20Kabupaten%20Temanggung%2C%20Jawa%20Tengah%2056254!5e0!3m2!1sen!2sid!4v1727248489304!5m2!1sen!2sid" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5169753879027!2d110.07629327429838!3d-7.2956637717134605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70764795d30c87%3A0xffd0d04496c24a3e!2sJl.%20Campur%20Salam%20No.184%2C%20Capgawen%2C%20Caturanom%2C%20Kec.%20Parakan%2C%20Kabupaten%20Temanggung%2C%20Jawa%20Tengah%2056254!5e0!3m2!1sen!2sid!4v1727248489304!5m2!1sen!2sid" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <form onSubmit={handleSubmit} className="p-12 bg-white border-2 shadow-md space-y-6" id='contact-us'>
@@ -59,10 +58,10 @@ const Location = () => {
               <span className='text-body'>For more information</span>
             </div>
 
-            <div className="md:flex md:space-x-4 ">
+            <div className="md:flex md:space-x-4">
               {contactUs.slice(1, 3).map((field) => (
                 <div key={field.id} className="w-full mt-6 md:w-1/2 md:mt-0">
-                  <label htmlFor={field.id} className="block text-[12px]  text-body">{field.title}</label>
+                  <label htmlFor={field.id} className="block text-[12px] text-body">{field.title}</label>
                   <input type="text" id={field.id} value={formData[field.id]} onChange={handleInputChange} className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" required />
                 </div>
               ))}
@@ -70,7 +69,7 @@ const Location = () => {
 
             {contactUs.slice(3).map((field) => (
               <div key={field.id}>
-                <label htmlFor={field.id} className="block text-[12px]  text-body">{field.title}</label>
+                <label htmlFor={field.id} className="block text-[12px] text-body">{field.title}</label>
                 {field.id === 'message' ? (
                   <textarea id={field.id} value={formData[field.id]} onChange={handleInputChange} className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" required />
                 ) : (
@@ -80,7 +79,7 @@ const Location = () => {
             ))}
 
             <button type="submit" className="w-full px-4 py-2 bg-secondary text-white font-bold text-[16px] rounded-md hover:bg-green-600 transition duration-300">
-              Send Via Whatsapp
+              Send via WhatsApp
             </button>
           </form>
         </div>

@@ -23,6 +23,7 @@ import hero from './hero.jpg'
 import mission from './mission.jpg'
 import hero2 from './hero2.jpg'
 import card from './Card.jpg'
+import Sas from './sas.mov'
 
 export {
   woodchip,
@@ -48,7 +49,8 @@ export {
   hero,
   mission,
   hero2,
-  card
+  card,
+  Sas,
 }
 
 // icon

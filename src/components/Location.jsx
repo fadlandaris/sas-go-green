@@ -26,7 +26,7 @@ const Location = () => {
     const whatsappMessage = `Name: ${formData.name}%0ACompany: ${formData.company}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
 
     // WhatsApp phone number
-    const phoneNumber = '6281291664669'; // Update with the correct phone number
+    const phoneNumber = '628112789012'; // Update with the correct phone number
 
     // WhatsApp URL with the pre-filled message
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;

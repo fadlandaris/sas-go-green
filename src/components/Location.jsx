@@ -78,7 +78,7 @@ const Location = () => {
               </div>
             ))}
 
-            <button type="submit" className="w-full px-4 py-2 bg-secondary text-white font-bold text-[16px] rounded-md hover:bg-green-600 transition duration-300">
+            <button type="submit" className="w-full px-4 py-2 bg-secondary text-white  text-[16px] rounded-md hover:bg-green-600 transition duration-300">
               Send via WhatsApp
             </button>
           </form>

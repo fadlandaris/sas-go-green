@@ -24,6 +24,7 @@ import mission from './mission.jpg'
 import hero2 from './hero2.jpg'
 import card from './Card.jpg'
 import Sas from './sas.mov'
+import SasHero from './sasBuilding.png'
 
 export {
   woodchip,
@@ -51,6 +52,7 @@ export {
   hero2,
   card,
   Sas,
+  SasHero
 }
 
 // icon
@@ -75,6 +77,8 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { MdOutlineVolumeUp } from "react-icons/md";
+import { MdOutlineVolumeOff } from "react-icons/md";
 
 
 export {
@@ -100,4 +104,6 @@ export {
   FaFacebookF,
   FaTiktok,
  PiInstagramLogoFill,
+ MdOutlineVolumeUp,
+ MdOutlineVolumeOff,
 }

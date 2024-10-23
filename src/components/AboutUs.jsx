@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../style';
-import { GoArrowRight, Sas } from '../assets';
+import { GoArrowRight,  SasHero } from '../assets';
 import card from '/src/assets/Card.jpg';
 import { aboutUs } from '../constants';
 import certificate from '../assets/woodchip_lab_analys.pdf';
@@ -8,15 +8,13 @@ import certificate from '../assets/woodchip_lab_analys.pdf';
 
 const AboutUs = () => {
   return (
-    <main className="flex justify-center items-center p-6 md:p-12" id="about-us" >
+    <main className='p-6 md:p-12'>
+      <section className="flex justify-center items-center " id="about-us" >
       <div className="grid grid-cols-1 md:grid-cols-3 md:items-center gap-y-6 gap-x-8 lg:gap-x-20 max-w-6xl w-full my-24">
 
 
       <div className="h-[300px] md:h-[500px] bg-cover bg-center relative">
-      <video className="w-full h-full object-cover" controls loop autoPlay muted>
-        <source src={Sas} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <img src={SasHero} alt={SasHero} className='w-full h-full' />
     </div>
 
         <div className="md:my-0 my-4 md:text-left p-4 md:px-0">
@@ -57,7 +55,11 @@ const AboutUs = () => {
         </div>
             
       </div>
+    
+    </section>
+     
     </main>
+    
   );
 };
 

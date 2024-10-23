@@ -43,7 +43,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`w-full py-[20px] text-[14px] flex justify-center text-body bg-white fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`w-full py-[20px] text-[14px] flex justify-center text-white  fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='flex justify-between w-[1280px] items-center px-12'>
         <div className='flex justify-center items-center'>
           <img src={logo} alt="logo" className='w-10 object-cover' />
@@ -65,7 +65,7 @@ const Navbar = () => {
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
-        <ul className={`${!nav ? 'hidden' : 'absolute'} top-16 right-0 w-full bg-white flex flex-col justify-center items-center p-6`}>
+        <ul className={`${!nav ? 'hidden' : 'absolute'} top-16 right-0 w-full  flex flex-col justify-center items-center p-6`}>
           {navLinks.map((item, index) => (
             <li key={index} className="py-6 text-2xl hover:text-secondary">
               <a href={`#${item.id}`} onClick={handleClick}>
